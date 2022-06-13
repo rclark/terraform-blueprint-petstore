@@ -3,5 +3,5 @@ output "pet_name" {
 }
 
 output "terraform_version" {
-  value = http.terraform_version.response_body
+  value = data.http.terraform_version.response_body
 }

@@ -21,7 +21,7 @@ data "http" "terraform_version" {
 }
 
 resource "random_pet" "pet" {
-  length = var.word-count
+  length = var.pet-count
 }
 
 resource "random_string" "random_word" {
