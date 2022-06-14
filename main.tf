@@ -11,15 +11,6 @@ terraform {
   }
 }
 
-data "http" "terraform_version" {
-  url = "https://checkpoint-api.hashicorp.com/v1/check/terraform"
-
-  # Optional request headers
-  request_headers = {
-    Accept = "application/json"
-  }
-}
-
 resource "random_pet" "pet" {
   length = var.pet-count
 }
